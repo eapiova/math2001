@@ -138,7 +138,7 @@ example {u v : ℚ} (h1 : 4 * u + v = 3) (h2 : v = 2) : u = 1 / 4 :=
     _ = 1 / 4 := by ring
 
 example {c : ℚ} (h1 : 4 * c + 1 = 3 * c - 2) : c = -3 :=
-  sorry
+  calc
 
 example {p : ℝ} (h1 : 5 * p - 3 = 3 * p + 1) : p = 2 :=
   sorry
