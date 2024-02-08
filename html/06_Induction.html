@@ -122,9 +122,6 @@
 <li class="toctree-l1"><a class="reference internal" href="Index_of_Tactics.html">Index of Lean tactics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Mainstream_Lean.html">Transitioning to mainstream Lean</a></li>
 </ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="Homework.html">Homework</a></li>
-</ul>
 
         </div>
       </div>
@@ -181,7 +178,7 @@ generally, <em>well-founded induction</em>. These induction principles are more 
 &amp;=(k+1+1) + k\\
 &amp;\geq k+1+1.\end{split}\]</div>
 </div>
-<p>In Lean, the tactic <code class="docutils literal notranslate"><span class="pre">simple_induction</span></code> will set up an induction proof.  Here, after the line
+<p>In Lean, the tactic <code class="docutils literal notranslate"><span class="pre">simple_induction</span></code> will set up an induction proof.  Here, before the line
 <code class="docutils literal notranslate"><span class="pre">simple_induction</span> <span class="pre">n</span> <span class="pre">with</span> <span class="pre">k</span> <span class="pre">IH</span></code>, the goal state displays a single goal,</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>n : &#8469;
 &#8866; 2 ^ n &#8805; n + 1
@@ -2138,7 +2135,7 @@ T(-n),&amp;n&lt; 0\\
 </div>
 </li>
 <li><p>Let <span class="math notranslate nohighlight">\(a\)</span> and <span class="math notranslate nohighlight">\(b\)</span> be integers, with <span class="math notranslate nohighlight">\(b\)</span> positive.  Prove that there exists a
-unique integer <span class="math notranslate nohighlight">\(r\)</span>, such that <span class="math notranslate nohighlight">\(a\equiv r\mod b\)</span>.</p>
+unique integer <span class="math notranslate nohighlight">\(r\)</span> in the range <span class="math notranslate nohighlight">\(0 \le r &lt; b\)</span>, such that <span class="math notranslate nohighlight">\(a\equiv r\mod b\)</span>.</p>
 <p>This theorem is an upgrade to <a class="reference internal" href="#weak-division-algorithm"><span class="std std-numref">Example 6.6.5</span></a>, stating uniqueness
 as well as existence.  We stated it without proof in <a class="reference internal" href="04_Proofs_with_Structure_II.html#division-algorithm"><span class="std std-numref">Example 4.3.4</span></a>
 (with the Lean name <code class="docutils literal notranslate"><span class="pre">Int.existsUnique_modEq_lt</span></code>) and have been implicitly using it whenever we
@@ -2813,7 +2810,7 @@ have this property.</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2022-2023, Heather Macbeth.  All rights reserved.</p>
+    <p>&#169; Copyright 2022-2024, Heather Macbeth.  All rights reserved.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

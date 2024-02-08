@@ -105,9 +105,6 @@
 <li class="toctree-l1"><a class="reference internal" href="Index_of_Tactics.html">Index of Lean tactics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Mainstream_Lean.html">Transitioning to mainstream Lean</a></li>
 </ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="Homework.html">Homework</a></li>
-</ul>
 
         </div>
       </div>
@@ -161,7 +158,7 @@ side with the right.</p>
 &amp;=4^2+4\cdot 1\\
 &amp;=20.\end{split}\]</div>
 </div>
-<p>We call the above proof a proof by calculation.  The goal was to show that <span class="math notranslate nohighlight">\((a+b)^2=20\)</span>,
+<p>We call the above proof a <em>proof by calculation</em>.  The goal was to show that <span class="math notranslate nohighlight">\((a+b)^2=20\)</span>,
 and we established this by writing down a chain of equalities,
 which starts with the expression <span class="math notranslate nohighlight">\((a+b)^2\)</span> (top left) and ends with
 <span class="math notranslate nohighlight">\(20\)</span> (bottom right).  The proof, implicitly, has three steps:</p>
@@ -905,8 +902,8 @@ which starts with the expression <span class="math notranslate nohighlight">\(y\
 <span class="math notranslate nohighlight">\(\underline{\text{Proof that }y=(y+2x)-2x}\)</span>: algebraic rearrangement.</p>
 <p>2.
 <span class="math notranslate nohighlight">\(\underline{\text{Proof that }(y+2x)-2x\geq 3-2x}\)</span>: this uses the given fact that
-<span class="math notranslate nohighlight">\(y + 2x\geq 3\)</span> together the general rule that an inequality is preserved under subtraction
-(<span class="math notranslate nohighlight">\(A\geq B\)</span> implies <span class="math notranslate nohighlight">\(A-C\geq B-C\)</span>).</p>
+<span class="math notranslate nohighlight">\(y + 2x\geq 3\)</span> together with the general rule that an inequality is preserved under
+subtraction (<span class="math notranslate nohighlight">\(A\geq B\)</span> implies <span class="math notranslate nohighlight">\(A-C\geq B-C\)</span>).</p>
 <p>3.
 <span class="math notranslate nohighlight">\(\underline{\text{Proof that }3-2x=9-2(x+3)}\)</span>: algebraic rearrangement</p>
 <p>4.
@@ -1306,8 +1303,6 @@ three separate squares: <span class="math notranslate nohighlight">\((a ^ 2 (b ^
 </pre></div>
 </div>
 </li>
-</ol>
-<ol class="arabic" start="5">
 <li><p>Let <span class="math notranslate nohighlight">\(x\)</span> be a rational number. Show that
 <span class="math notranslate nohighlight">\(x ^ 2 - 2  x \ge -1\)</span>.</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">x</span> <span class="o">:</span> <span class="n">&#8474;</span><span class="o">}</span> <span class="o">:</span> <span class="n">x</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">-</span> <span class="mi">2</span> <span class="bp">*</span> <span class="n">x</span> <span class="bp">&#8805;</span> <span class="bp">-</span><span class="mi">1</span> <span class="o">:=</span>
@@ -1409,7 +1404,7 @@ addition and subtraction: if <span class="math notranslate nohighlight">\(3w+1=4
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2022-2023, Heather Macbeth.  All rights reserved.</p>
+    <p>&#169; Copyright 2022-2024, Heather Macbeth.  All rights reserved.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
