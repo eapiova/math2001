@@ -162,15 +162,27 @@ example {a b : ℝ} (h1 : a + 2 * b = 4) (h2 : a - b = 1) : a = 2 :=
     _ = 2 := by ring
 
 example {u v : ℝ} (h1 : u + 1 = v) : u ^ 2 + 3 * u + 1 = v ^ 2 + v - 1 :=
-  sorry
+  calc
+    u ^ 2 + 3 * u + 1 = (u + 1) ^ 2 + (u + 1) - 1 := by ring
+    _ = v ^ 2 + v - 1 := by rw [h1]
+
 
 example {t : ℚ} (ht : t ^ 2 - 4 = 0) :
     t ^ 4 + 3 * t ^ 3 - 3 * t ^ 2 - 2 * t - 2 = 10 * t + 2 :=
-  sorry
+  calc
+    t ^ 4 + 3 * t ^ 3 - 3 * t ^ 2 - 2 * t - 2 = (t ^ 2 - 4) ^ 2 + 3 * t ^ 3 + 5 * t ^ 2 - 2 * t 
 
 example {x y : ℝ} (h1 : x + 3 = 5) (h2 : 2 * x - y * x = 0) : y = 2 :=
-  sorry
+  calc
+    y = (x + 3) - (x + 3) + (2 * x - y * x) - (2 * x - y * x) + y := by ring
+    _ = 
+
 
 example {p q r : ℚ} (h1 : p + q + r = 0) (h2 : p * q + p * r + q * r = 2) :
     p ^ 2 + q ^ 2 + r ^ 2 = -4 :=
-  sorry
+  calc
+    p ^ 2 + q ^ 2 + r ^ 2 = (p + q + r) ^ 2 - 2 * (p * q + p * r + q * r) := by ring
+    _ = 0 ^ 2 - 2 * 2 := by rw [h1, h2]
+    _ = -4 := by ring
+
+
